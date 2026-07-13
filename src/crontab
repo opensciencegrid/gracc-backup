@@ -1,0 +1,4 @@
+0 * * * * root python3.11 -u /app/gracc-backup.py ps-itb  &>> /var/log/cron.log
+0 * * * * root python3.11 -u /app/gracc-backup.py ps-prod  &>> /var/log/cron.log
+0 * * * * root python3.11 -u /app/gracc-backup.py raw  &>> /var/log/cron.log
+0 * * * * root python3.11 -u /app/gracc-backup.py transfers  &>> /var/log/cron.log
